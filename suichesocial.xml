@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.1" type="plugin" group="content" method="upgrade">
-    <name>Compartir Contenido en Redes</name>
+    <name>Social Share Buttons - SuicheSocial</name>
     <author>Suiche Creativo</author>
     <creationDate>Junio 2016</creationDate>
     <copyright>Copyright (C) 20016 Open Source Matters. All rights reserved.</copyright>
@@ -8,7 +8,7 @@
     <authorEmail>juandavid8a@gmail.com</authorEmail>
     <authorUrl>www.suichecreativo.com</authorUrl>
     <version>1.0</version>
-    <description>Comparte contenido en redes sociales</description>
+    <description>Plugin desarrollado por www.suichecreativo.com que permite compartir contenido en redes sociales.</description>
     <files>
         <filename plugin="suichesocial">suichesocial.php</filename>
         <filename>index.html</filename>
@@ -19,8 +19,37 @@
  
             <fieldset name="basic">
 
-                <field name="facebook" type="radio"
+                <field name="contenido" type="radio"
+                    default="1"
+                    description="Publicar en contenido de Joomla"
+                    label="Contenido"
+                >
+                    <option value="0">JOFF</option>
+                    <option value="1">JON</option>
+                    
+                </field>
+ 
+                <field name="k2" type="radio"
+                    default="1"
+                    description="Publicar en K2"
+                    label="K2"
+                >
+                    <option value="0">JOFF</option>
+                    <option value="1">JON</option>
+                </field>
+
+                <field name="virtuemart" type="radio"
                     default="0"
+                    description="Publicar en Virtuemart"
+                    label="Virtuemart"
+                >
+                    <option value="0">JOFF</option>
+                    
+                </field>
+
+
+                <field name="facebook" type="radio"
+                    default="1"
                     description="Compartir en Facebook"
                     label="Facebook"
                 >
@@ -29,7 +58,7 @@
                 </field>
  
                 <field name="google" type="radio"
-                    default="0"
+                    default="1"
                     description="Compartir Google+"
                     label="Goolge+"
                 >
@@ -38,7 +67,7 @@
                 </field>
 
                 <field name="twitter" type="radio"
-                    default="0"
+                    default="1"
                     description="Compartir en Twitter"
                     label="Twitter"
                 >
