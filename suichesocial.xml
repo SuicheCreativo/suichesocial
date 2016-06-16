@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+    <name>Compartir Contenido en Redes</name>
+    <author>Suiche Creativo</author>
+    <creationDate>Junio 2016</creationDate>
+    <copyright>Copyright (C) 20016 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>juandavid8a@gmail.com</authorEmail>
+    <authorUrl>www.suichecreativo.com</authorUrl>
+    <version>1.0</version>
+    <description>Comparte contenido en redes sociales</description>
+    <files>
+        <filename plugin="suichesocial">suichesocial.php</filename>
+        <filename>index.html</filename>
+        <folder>img</folder>
+    </files>
+    <config>
+        <fields name="params">
+ 
+            <fieldset name="basic">
+
+                <field name="facebook" type="radio"
+                    default="0"
+                    description="Compartir en Facebook"
+                    label="Facebook"
+                >
+                    <option value="0">JOFF</option>
+                    <option value="1">JON</option>
+                </field>
+ 
+                <field name="google" type="radio"
+                    default="0"
+                    description="Compartir Google+"
+                    label="Goolge+"
+                >
+                    <option value="0">JOFF</option>
+                    <option value="1">JON</option>
+                </field>
+
+                <field name="twitter" type="radio"
+                    default="0"
+                    description="Compartir en Twitter"
+                    label="Twitter"
+                >
+                    <option value="0">JOFF</option>
+                    <option value="1">JON</option>
+                </field>
+            </fieldset>
+ 
+        </fields>
+    </config>
+</extension>
